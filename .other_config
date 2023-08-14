@@ -1,0 +1,10 @@
+[oauth2]
+clientid = '3f042fa820e69e437366'
+clientsecret = 'your_client_secret'
+redirecturl = 'http://localhost:8080/oauth2/callback'
+scopes = ['user:email']
+secret = '65faa36763886099bf4bc3ac7df69fbd38bb2e90'
+
+[oauth2.endpoint]
+authurl = 'https://github.com/login/oauth/authorize'
+tokenurl = 'https://github.com/login/oauth/access_token'

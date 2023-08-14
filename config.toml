@@ -1,0 +1,9 @@
+[oauth2]
+ClientID = "your_client_id"
+ClientSecret = "your_client_secret"
+Scopes = ["user:email"]
+RedirectURL = "http://localhost:8080/oauth2/callback"
+
+[oauth2.Endpoint]
+AuthURL = "https://github.com/login/oauth/authorize"
+TokenURL = "https://github.com/login/oauth/access_token"

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Fetch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@latest/css/bulma.min.css"
+    />
+    <style>
+      body {
+        background-color: #272727;
+        color: #ffffff;
+      }
+      html {
+        background-color: #272727;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container pt-4 mt-4">
+      <h1>Hello Fetch Example</h1>
+      <div class="pt-4" id="message"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/hello")
+          .then((response) => response.json())
+          .then((data) => {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = data.message;
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      });
+    </script>
+  </body>
+</html>

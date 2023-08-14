@@ -1,0 +1,46 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Executables
+*.exe
+*.out
+*.test
+
+# Go Binary
+bin/
+
+# Go generated files
+pkg/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Compiled Go source code
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# MacOS
+.DS_Store
+
+# Go plugins
+plugin/
+
+# Compiled files for testing
+test/
+
+# Air tmp folder
+tmp/
+
+# Env file
+.env
